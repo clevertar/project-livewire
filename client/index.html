@@ -42,6 +42,9 @@
     <button id="screenButton" class="action-button">
       <span class="material-symbols-outlined">present_to_all</span>
     </button>
+    <button id="uploadImageButton" class="action-button">
+      <span class="material-symbols-outlined">upload_file</span>
+    </button>
     <div class="text-input-container">
       <input type="text" id="textInput" placeholder="Type your message..." class="text-input">
       <button id="sendButton" class="action-button">
@@ -92,6 +95,9 @@
   </div>
 
   <div id="output"></div>
+
+  <!-- Hidden file input for image upload -->
+  <input type="file" id="imageUploadInput" accept="image/*" style="display: none;">
 
   <!-- Load EventEmitter3 first -->
   <script src="https://cdn.jsdelivr.net/npm/eventemitter3@5.0.1/dist/eventemitter3.umd.min.js"></script>
